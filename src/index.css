@@ -1,0 +1,80 @@
+*{
+  padding: 0;
+  margin: 0;
+  color: black;
+}
+body{
+  position: relative;
+  color: black;
+}
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 80px;
+  width: 100%;
+ background: linear-gradient(90deg, #4b0082, #800080);
+
+  display: flex;
+}
+nav img{
+  position: absolute;
+  align-self: center;
+  left: 30px;
+  height: 70px;
+  
+}
+nav h2{
+  position: absolute;
+  left: 4.3em;
+  align-self: center;
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  font-family: 'Anton', sans-serif;
+  
+}
+nav p{
+  position: absolute;
+  right: 1em;
+  align-self: center;
+  color: rgb(249, 238, 255);
+  font-weight: bold;
+  font-size:14px;
+  font-family: 'Anton', sans-serif;
+}
+.form-container{
+  width: 90vw;
+  height: auto;
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  margin-left: 5vw;
+}
+.inner{
+  display: flex;
+  gap: 10vw;
+ 
+}
+input{
+  padding-left: 2vw;
+  height: 30px;
+  width: 40vw;
+  border: 0.2em solid purple;
+  border-radius: 0.5em;
+   font-size: larger;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  
+}
+.file-input{
+  border: 2px solid purple;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  width: 90vw;
+   background: linear-gradient(90deg, #4b0082, #800080);
+  color: white;
+  font-size: larger;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
