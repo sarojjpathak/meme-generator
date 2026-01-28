@@ -79,6 +79,7 @@ input{
 }
 .img--onscreen{
   width: 80vw;
+  max-width: fit-content;
   align-self: center;
 }
 
