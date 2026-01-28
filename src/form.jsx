@@ -1,7 +1,7 @@
 import { useState } from "react";
 import memeimg from "./memeimg.json"
 function Form(){
-    const[ display , setImg] = useState("");
+    const[ display , setImg] = useState("https://i.ytimg.com/vi/cuilJhxiC_g/maxresdefault.jpg");
 
     function imgHandler(){
        
