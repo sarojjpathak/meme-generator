@@ -1,24 +1,28 @@
 import Nav from './navbar.jsx';
 import Form from './form.jsx';
 import './App.css'
+import { useState } from 'react';
 
 function App() {
-//      let things
-//     const arr = ["thing 1" , "thing 2"];
-//     function clickHandler(){
-//         const length = arr.length
-//         arr.push(`things${length + 1}`)
-//         // console.log(arr);
-//         // document.getElementById("para").innerText= arr
-//          things = arr.map(th => <p>arr</p>)
-//     }
+ const[text , setText] = useState("yes");
+ function clickMe(){
+    setText((prev) => {
+    return    prev === "yes" ? "no" : "yes";
+       
+
+    })
+ }
+
 
  return(
  <>
  
+ 
  <Nav/>
 
  <Form/>
+ <button onClick={clickMe} className='yes-no'>{text}</button>
+
  </>
  );
 }

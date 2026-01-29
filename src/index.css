@@ -79,7 +79,22 @@ input{
 }
 .img--onscreen{
   width: 80vw;
+  height: 300px;
   max-width: fit-content;
   align-self: center;
 }
 
+.yes-no{
+  height: 96px;
+  width: 96px;
+  border-radius: 50%;
+  background-color: hsl(0, 0%, 9%);
+  color: white;
+  font-size: 1.2rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  border: 0.1px solid transparent;
+   box-shadow: 
+    6px 6px 15px rgba(0, 0, 0, 0.6),
+    -6px -6px 15px rgb(0, 0, 0);
+   
+}
