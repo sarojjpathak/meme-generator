@@ -20,6 +20,20 @@
         on : false},
     {
         id : 6,
+        on : true},
+    {
+        id : 7,
+        on : true
+    },
+    {
+        id : 8,
+        on : true},
+        
+    {
+        id : 9,
+        on : false},
+    {
+        id : 10,
         on : true}
 ]
 export default Box;
