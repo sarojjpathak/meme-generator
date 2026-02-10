@@ -14,22 +14,36 @@ function Form(){
     function ratingHandler(){
         setRet((prev) => !prev)
     }
+
+
+  //for inner text of the meme
+  const [topText , setTop] = useState("");
+  function top(event){
+     setTop( event.target.value);
+  }
+
+
+
+
    
     return(
         <>
+        
        <div className="form-container">
         <div className="inner">
-        <input type="text" placeholder="Top Text"/>
+        <input type="text" placeholder="Top Text" onChange={top} />
         <input type="text" placeholder="Bottom Text" />
         </div>
         <button className="file-input" onClick={imgHandler} >Get a new meme image</button>
         <div className="imcon">
+          
+            
               <img  src={starurl} alt="star-img" onClick={ratingHandler} className="imstar" />
         <img src={display} className="img--onscreen" alt="image" />
       
         </div>
         </div>
-        
+        <p>{topText}</p>
         </>
        
     );
