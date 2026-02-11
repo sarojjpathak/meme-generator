@@ -6,7 +6,7 @@
 
     return(
          <div 
-         onClick={()=>props.toggle(props.id)} 
+         onMouseOver={()=>props.toggle(props.id)} 
    style={{backgroundColor: props.on ? 'white':'black',
            color: props.on ? 'black':'white'} }
    className="box"
